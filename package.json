@@ -8,6 +8,8 @@
     "dev": "http-server index.html"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "http-server": "^0.12.3",
     "socket.io": "^3.1.2"
   },

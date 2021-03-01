@@ -1,8 +1,14 @@
-const io = require("socket.io")(3000, {
-  cors: {
-    origin: "*",
-  },
-});
+const app = require("express")();
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
+const cors = require('cors');
+
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+})
+
+app.use(cors());
+
 
 const users = {};
 
@@ -21,4 +27,8 @@ io.on("connection", (socket) => {
     socket.broadcast.emit("user-disconnected", users[socket.id]);
     delete users[socket.id];
   });
+});
+
+http.listen(3000, () => {
+  console.log('server started at port 3000!')
 });
