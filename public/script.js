@@ -1,4 +1,4 @@
-const socket = io('http://mailing.educatux.com.br:3334',{secure: true})
+const socket = io('https://mailing.educatux.com.br:3334',{secure: true})
 const messageContainer = document.getElementById('message-container')
 const messageForm = document.getElementById('send-container')
 const messageInput = document.getElementById('message-input')
