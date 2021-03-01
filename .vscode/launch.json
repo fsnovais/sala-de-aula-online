@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+
+      {
+          "type": "chrome",
+          "request": "launch",
+          "name": "Launch Chrome against localhost",
+          "url": "http://localhost:5500",
+          "webRoot": "${workspaceRoot}",
+          "liveServer.settings.port": 5500,
+    "liveServer.settings.CustomBrowser" : "chrome",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome --incognito --remote-debugging-port=9222",
+    "liveServer.settings.NoBrowser" : false,
+    "liveServer.settings.ignoreFiles" : [
+            ".vscode/**",
+            "**/*.scss",
+            "**/*.sass"
+    ]
+          
+      }
+  ]
+}
+  ]
+}

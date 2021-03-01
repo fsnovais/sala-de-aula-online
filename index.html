@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>Cresça Chat App</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+  <header id="header-container">
+    <img src="./assets/img/nova-logo-escola-cresca-2020.png" alt="logo">
+  </header>
+  <div id="video-container">
+    <iframe src="https://www.youtube.com/embed/YWdgy0FgV0k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div id="message-container"></div>
+  <form id="send-container">
+    <input type="text" placeholder="Digite sua mensagem" id="message-input">
+    <button type="submit" id="send-button">Enviar</button>
+  </form>
+  <footer id="footer-container">
+    <p>2021 - ESCOLA CRESÇA - Todos os direitos reservados</p>
+  </footer>
+</div>
+</body>
+</html>
