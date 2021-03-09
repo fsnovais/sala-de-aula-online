@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://www.cresca.com.br/images/logo/favicon.png" rel="shortcut icon" type="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  
+  <link rel="stylesheet" href="css/style.css">
+  <title>Aulas Online - Cresça</title>
+</head>
+<body>
+  <section class="title">
+    <a href="https://www.cresca.com.br/" target="_blank">
+      <img src="./img/nova-logo-escola-cresca-2020.png">
+    </a>		
+    <h1>Sala de aula Online</h1>
+    <a href="index.html" class="sair">Sair da sala</a>
+  </section>
+  <section class="container-1">
+    <div class="responsive"> 
+      <iframe src="https://www.youtube.com/embed/uUm4u3NjATg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="chat-container">
+    <header class="chat-header">
+      <h1><i class="far fa-comments"></i> Chat online</h1>
+
+    </header>
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <h3><i class="fas fa-circle-notch"></i> Sala:</h3>
+        <h2 id="room-name"></h2>
+        <h3><i class="fas fa-user-circle"></i> Usuários</h3>
+        <ul id="users">
+        </ul>
+      </div>
+      <div class="chat-messages">
+      </div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input
+          id="msg"
+          type="text"
+          placeholder="Escreva sua mensagem"
+          required
+          autocomplete="off"
+        />
+        <button class="btn send"><i class="fas fa-paper-plane"></i> <span>Enviar</span></button>
+      </form>
+    </div>
+  </div>
+  </section>
+  <section class="footer">
+    <span>2021 - ESCOLA CRESÇA - Todos os direitos reservados</span>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.6/qs.min.js" integrity="sha512-3TmPrquYLaAsUmZKXRARTDC5siWhLAdBVqNo4dWpDABBtLU62AaoTaQJEvjxjExcZYurO6i1dnK85k8pPIBlRg==" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
