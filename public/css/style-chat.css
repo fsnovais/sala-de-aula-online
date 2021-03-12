@@ -44,8 +44,6 @@ a {
 	background: #fff;
 	overflow: hidden;
 	border-radius: 20px;
-	/* Desativa o chat */
-	display: none;
 
 }
 
@@ -207,15 +205,13 @@ a {
 .container-1 {
 	margin-top: 50px;
 	display: grid;
-	grid-template-columns: 1fr 3fr 1fr;
-	grid-template-rows: 30vw;
+	grid-template-columns: 1fr 1fr;
 	column-gap: 20px;
 }
 
 iframe {
 	width: 100%;
 	height: 100%;
-
 }
 
 .footer {
@@ -236,20 +232,33 @@ iframe {
 	padding: 10px 20px;
 }
 
-.video-container{
-	grid-column: 2/3;
-	
-}
-
 @media (max-width: 1000px) {
 	.title h1 {
 		display: none;
 	}
 
 	.container-1 {
-		grid-template-columns: 1px 1fr 1px;
-		grid-template-rows: 200px;
-		grid-gap: 0;
+		grid-template-columns: 1fr;
+		grid-template-rows: 200px 1fr;
+		grid-gap: 20px;
+	}
+	.chat-messages {
+		max-height: 170px;
+	}
+
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+	.send{
+		margin-left: 10px;
+		padding: 0 20px;
+	}
+	.send > span{
+		display: none;
 	}
 	.footer {
 		display: none;
