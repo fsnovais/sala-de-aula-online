@@ -23,6 +23,21 @@ body {
 
 ul {
 	list-style: none;
+	height:1fr; 
+	width:70%;
+	overflow:hidden; 
+	overflow-y:scroll;
+}
+
+.btn-list button {
+  background-color: #325eb1; 
+  border: 1px solid #0d0080;
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+	text-align: left;
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
 }
 
 a {
@@ -248,7 +263,7 @@ iframe {
 
 	.container-1 {
 		grid-template-columns: 1px 1fr 1px;
-		grid-template-rows: 200px;
+		grid-template-rows: 200px 1fr;
 		grid-gap: 0;
 	}
 	.footer {
